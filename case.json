@@ -1,0 +1,111 @@
+{
+  "base": {
+    "members": [
+      "A",
+      "B",
+      "C"
+    ],
+    "roll": [
+      {
+        "id": "eA",
+        "rev": 1,
+        "t": 1,
+        "seq": 0,
+        "member": "A",
+        "kind": "in"
+      },
+      {
+        "id": "eB",
+        "rev": 1,
+        "t": 1,
+        "seq": 1,
+        "member": "B",
+        "kind": "in"
+      },
+      {
+        "id": "eC",
+        "rev": 1,
+        "t": 1,
+        "seq": 2,
+        "member": "C",
+        "kind": "in"
+      }
+    ],
+    "cutoffs": {
+      "M1": [
+        3,
+        0
+      ],
+      "M2": [
+        3,
+        0
+      ]
+    },
+    "votes": {
+      "M1": {
+        "A": "yes",
+        "B": "yes",
+        "C": "no"
+      },
+      "M2": {
+        "A": "yes",
+        "B": "yes",
+        "C": "yes"
+      }
+    },
+    "articles": {
+      "use": "自习"
+    },
+    "motions": [
+      {
+        "id": "M1",
+        "article": "use",
+        "old": "自习",
+        "next": "报刊"
+      },
+      {
+        "id": "M2",
+        "article": "use",
+        "old": "报刊",
+        "next": "合读"
+      }
+    ],
+    "before": [
+      [
+        "M1",
+        "M2"
+      ]
+    ],
+    "quorum": 3
+  },
+  "variants": [
+    {
+      "name": "recusal",
+      "append_to": "roll",
+      "value": {
+        "id": "rA",
+        "rev": 1,
+        "t": 2,
+        "seq": 0,
+        "member": "A",
+        "kind": "recuse",
+        "motion": "M1"
+      }
+    },
+    {
+      "name": "reverse-order",
+      "replace": "before",
+      "value": [
+        [
+          "M2",
+          "M1"
+        ]
+      ]
+    },
+    {
+      "name": "missing-order",
+      "replace": "before",
+      "value": []
+    }
+  ]
+}
