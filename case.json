@@ -1,0 +1,88 @@
+{
+  "source": {
+    "starts": [
+      0,
+      72,
+      144,
+      216,
+      288
+    ],
+    "terms": [
+      24,
+      144,
+      240
+    ],
+    "offset": 0,
+    "first_month": 8
+  },
+  "consumer": {
+    "closed": [],
+    "requests": [
+      {
+        "id": "F",
+        "month": 9,
+        "kind": "ordinary",
+        "occurrence": 1,
+        "day": 2,
+        "grace": 1
+      }
+    ]
+  },
+  "changes": [
+    {
+      "consumer": {
+        "closed": [
+          7
+        ]
+      }
+    },
+    {
+      "source": {
+        "terms": [
+          24,
+          143,
+          240
+        ]
+      }
+    }
+  ],
+  "market_pair": {
+    "source": {
+      "starts": [
+        0,
+        72,
+        144,
+        216,
+        288
+      ],
+      "terms": [
+        24,
+        144,
+        240
+      ],
+      "offset": 0,
+      "first_month": 8
+    },
+    "consumer": {
+      "closed": [],
+      "requests": [
+        {
+          "id": "A",
+          "month": 9,
+          "kind": "ordinary",
+          "occurrence": 1,
+          "day": 2,
+          "grace": 1
+        },
+        {
+          "id": "B",
+          "month": 9,
+          "kind": "ordinary",
+          "occurrence": 1,
+          "day": 2,
+          "grace": 0
+        }
+      ]
+    }
+  }
+}
