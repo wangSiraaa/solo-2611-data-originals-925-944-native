@@ -1,0 +1,138 @@
+{
+  "source": {
+    "duty": [
+      [
+        "L",
+        "bench",
+        0,
+        6
+      ],
+      [
+        "M",
+        "bench",
+        0,
+        4
+      ],
+      [
+        "Q",
+        "finish",
+        0,
+        3
+      ]
+    ],
+    "loans": [],
+    "cutoff": 6
+  },
+  "consumer": {
+    "pools": [
+      {
+        "id": "B",
+        "role": "bench",
+        "capacity": 1
+      },
+      {
+        "id": "F",
+        "role": "finish",
+        "capacity": 1
+      }
+    ],
+    "preferences": {
+      "L": [
+        "B",
+        "F"
+      ],
+      "M": [
+        "B"
+      ],
+      "Q": [
+        "F"
+      ]
+    }
+  },
+  "changes": [
+    {
+      "source": {
+        "loans": [
+          [
+            "L",
+            "finish",
+            1,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "consumer": {
+        "pools": [
+          {
+            "id": "B",
+            "role": "bench",
+            "capacity": 2
+          },
+          {
+            "id": "F",
+            "role": "finish",
+            "capacity": 1
+          }
+        ]
+      }
+    }
+  ],
+  "two_stable": {
+    "source": {
+      "duty": [
+        [
+          "L",
+          "bench",
+          0,
+          1
+        ],
+        [
+          "L",
+          "finish",
+          1,
+          3
+        ],
+        [
+          "M",
+          "bench",
+          0,
+          2
+        ],
+        [
+          "M",
+          "finish",
+          2,
+          3
+        ]
+      ],
+      "loans": [],
+      "cutoff": 3
+    },
+    "consumer": {
+      "pools": [
+        {
+          "id": "B",
+          "role": "bench",
+          "capacity": 1
+        },
+        {
+          "id": "F",
+          "role": "finish",
+          "capacity": 1
+        }
+      ],
+      "preferences": {
+        "L": [
+          "B",
+          "F"
+        ],
+        "M": [
+          "F",
+          "B"
+        ]
+      }
+    }
+  }
+}
