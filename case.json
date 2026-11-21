@@ -1,0 +1,131 @@
+{
+  "base": {
+    "rolls": [
+      {
+        "id": "R",
+        "grain": "N",
+        "rows": [
+          "..aa.c",
+          "..bb.b",
+          "..cc.a"
+        ]
+      }
+    ],
+    "cuts": [
+      {
+        "id": "L",
+        "roll": "R",
+        "row": 0,
+        "col": 0,
+        "size": 3,
+        "quarter_turns": 0
+      },
+      {
+        "id": "R",
+        "roll": "R",
+        "row": 0,
+        "col": 3,
+        "size": 3,
+        "quarter_turns": 0
+      }
+    ],
+    "board": [
+      [
+        "L",
+        "R"
+      ]
+    ],
+    "allowed_grain": {
+      "L": [
+        "N"
+      ],
+      "R": [
+        "N",
+        "S"
+      ]
+    }
+  },
+  "variants": [
+    {
+      "name": "correct-print",
+      "replace_cell": {
+        "roll": "R",
+        "row": 1,
+        "col": 3,
+        "value": "x"
+      }
+    },
+    {
+      "name": "customer-north-only",
+      "replace": "allowed_grain.R",
+      "value": [
+        "N"
+      ]
+    }
+  ],
+  "extra": {
+    "description": "左右邻片都固定朝北，要求中片分别采用相反方向。",
+    "rolls": [
+      {
+        "id": "S",
+        "grain": "N",
+        "rows": [
+          "xxa",
+          "yya",
+          "aaa",
+          "a.b",
+          "a.b",
+          "a.b",
+          "axx",
+          "ayy",
+          "azz"
+        ]
+      }
+    ],
+    "cuts": [
+      {
+        "id": "L",
+        "roll": "S",
+        "row": 0,
+        "col": 0,
+        "size": 3,
+        "quarter_turns": 0
+      },
+      {
+        "id": "M",
+        "roll": "S",
+        "row": 3,
+        "col": 0,
+        "size": 3,
+        "quarter_turns": 0
+      },
+      {
+        "id": "R",
+        "roll": "S",
+        "row": 6,
+        "col": 0,
+        "size": 3,
+        "quarter_turns": 0
+      }
+    ],
+    "board": [
+      [
+        "L",
+        "M",
+        "R"
+      ]
+    ],
+    "allowed_grain": {
+      "L": [
+        "N"
+      ],
+      "M": [
+        "N",
+        "S"
+      ],
+      "R": [
+        "N"
+      ]
+    }
+  }
+}
