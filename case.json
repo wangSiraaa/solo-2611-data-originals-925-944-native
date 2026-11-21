@@ -1,0 +1,322 @@
+{
+  "source": {
+    "letters": {
+      "松": {
+        "rime": "an",
+        "tone": 3
+      },
+      "尾": {
+        "rime": "e",
+        "tone": 3
+      },
+      "波": {
+        "rime": "an",
+        "tone": 2
+      },
+      "山": {
+        "rime": "an",
+        "tone": 2
+      },
+      "灯": {
+        "rime": "en",
+        "tone": 2
+      },
+      "星": {
+        "rime": "eng",
+        "tone": 2
+      }
+    },
+    "words": {
+      "松": {
+        "text": "松",
+        "stress": 0
+      },
+      "尾": {
+        "text": "尾",
+        "stress": null
+      },
+      "波": {
+        "text": "波",
+        "stress": 0
+      },
+      "山": {
+        "text": "山",
+        "stress": 0
+      },
+      "灯": {
+        "text": "灯",
+        "stress": 0
+      },
+      "星": {
+        "text": "星",
+        "stress": 0
+      },
+      "松松": {
+        "text": "松松",
+        "stress": 0
+      }
+    },
+    "lines": {
+      "P": [
+        [
+          {
+            "mark": "△",
+            "by": {
+              "甲": "松",
+              "乙": "波"
+            }
+          },
+          "尾"
+        ]
+      ],
+      "Q": [
+        [
+          "山"
+        ]
+      ],
+      "R": [
+        [
+          {
+            "mark": "△",
+            "by": {
+              "甲": "灯",
+              "乙": "星"
+            }
+          }
+        ]
+      ],
+      "S": [
+        [
+          "星"
+        ]
+      ]
+    }
+  },
+  "consumer": {
+    "chapters": [
+      {
+        "name": "上",
+        "groups": [
+          [
+            "P",
+            "Q"
+          ]
+        ]
+      },
+      {
+        "name": "下",
+        "groups": [
+          [
+            "R",
+            "S"
+          ]
+        ]
+      }
+    ],
+    "licensed_pairs": [
+      [
+        "en",
+        "eng"
+      ]
+    ],
+    "copy": {
+      "P": {
+        "text": "松尾",
+        "weights": [
+          1,
+          1
+        ]
+      },
+      "Q": {
+        "text": "山",
+        "weights": [
+          1
+        ]
+      },
+      "R": {
+        "text": "灯",
+        "weights": [
+          2
+        ]
+      },
+      "S": {
+        "text": "星",
+        "weights": [
+          1
+        ]
+      }
+    }
+  },
+  "changes": [
+    {
+      "source": {
+        "letters": {
+          "松": {
+            "rime": "an",
+            "tone": 3
+          },
+          "尾": {
+            "rime": "e",
+            "tone": 1
+          },
+          "波": {
+            "rime": "an",
+            "tone": 2
+          },
+          "山": {
+            "rime": "an",
+            "tone": 2
+          },
+          "灯": {
+            "rime": "en",
+            "tone": 2
+          },
+          "星": {
+            "rime": "eng",
+            "tone": 2
+          }
+        }
+      }
+    },
+    {
+      "consumer": {
+        "licensed_pairs": []
+      }
+    }
+  ],
+  "extra": {
+    "source": {
+      "letters": {
+        "松": {
+          "rime": "an",
+          "tone": 3
+        },
+        "尾": {
+          "rime": "e",
+          "tone": 3
+        },
+        "波": {
+          "rime": "an",
+          "tone": 2
+        },
+        "山": {
+          "rime": "an",
+          "tone": 2
+        },
+        "灯": {
+          "rime": "en",
+          "tone": 2
+        },
+        "星": {
+          "rime": "eng",
+          "tone": 2
+        }
+      },
+      "words": {
+        "松": {
+          "text": "松",
+          "stress": 0
+        },
+        "尾": {
+          "text": "尾",
+          "stress": null
+        },
+        "波": {
+          "text": "波",
+          "stress": 0
+        },
+        "山": {
+          "text": "山",
+          "stress": 0
+        },
+        "灯": {
+          "text": "灯",
+          "stress": 0
+        },
+        "星": {
+          "text": "星",
+          "stress": 0
+        },
+        "松松": {
+          "text": "松松",
+          "stress": 0
+        }
+      },
+      "lines": {
+        "T": [
+          [
+            "松松",
+            "尾"
+          ]
+        ],
+        "U": [
+          [
+            "松松"
+          ],
+          [
+            "尾"
+          ]
+        ],
+        "A": [
+          [
+            "山"
+          ]
+        ],
+        "B": [
+          [
+            "灯"
+          ]
+        ],
+        "C": [
+          [
+            "星"
+          ]
+        ]
+      }
+    },
+    "consumer": {
+      "chapters": [
+        {
+          "name": "三韵",
+          "groups": [
+            [
+              "A",
+              "B",
+              "C"
+            ]
+          ]
+        }
+      ],
+      "licensed_pairs": [
+        [
+          "an",
+          "en"
+        ],
+        [
+          "en",
+          "eng"
+        ]
+      ],
+      "copy": {
+        "A": {
+          "text": "山",
+          "weights": [
+            1
+          ]
+        },
+        "B": {
+          "text": "灯",
+          "weights": [
+            1
+          ]
+        },
+        "C": {
+          "text": "星",
+          "weights": [
+            1
+          ]
+        }
+      }
+    }
+  }
+}
