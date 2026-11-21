@@ -1,0 +1,124 @@
+{
+  "base": {
+    "scans": [
+      {
+        "id": "S",
+        "dark": 2,
+        "white": 10,
+        "clip": 11,
+        "error": 0
+      }
+    ],
+    "regions": [
+      "X",
+      "Y"
+    ],
+    "readings": [
+      {
+        "id": "x1",
+        "scan": "S",
+        "region": "X",
+        "value": 6
+      },
+      {
+        "id": "y1",
+        "scan": "S",
+        "region": "Y",
+        "value": 6
+      }
+    ],
+    "paper": {
+      "targets": {
+        "X": [
+          "1",
+          "1"
+        ],
+        "Y": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      "positions": {
+        "open": [
+          "X",
+          "Y"
+        ],
+        "coverY": [
+          "X"
+        ]
+      },
+      "start": "open",
+      "links": [
+        {
+          "a": "open",
+          "b": "coverY",
+          "cost": 1
+        }
+      ],
+      "max_lit": 12
+    }
+  },
+  "variants": [
+    {
+      "name": "reread-y",
+      "replace": "readings[1].value",
+      "value": 4
+    },
+    {
+      "name": "slower-rail",
+      "replace": "paper.links[0].cost",
+      "value": 4
+    }
+  ],
+  "clipped_roll": {
+    "regions": [
+      "X"
+    ],
+    "scans": [
+      {
+        "id": "clip",
+        "dark": 0,
+        "white": 8,
+        "clip": 4,
+        "error": 0
+      },
+      {
+        "id": "fine",
+        "dark": 1,
+        "white": 5,
+        "clip": 8,
+        "error": 0
+      }
+    ],
+    "readings": [
+      {
+        "id": "xclip",
+        "scan": "clip",
+        "region": "X",
+        "value": 4
+      }
+    ],
+    "additional_reading": {
+      "id": "xfine",
+      "scan": "fine",
+      "region": "X",
+      "value": 3
+    },
+    "paper": {
+      "targets": {
+        "X": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      "positions": {
+        "open": [
+          "X"
+        ]
+      },
+      "start": "open",
+      "links": [],
+      "max_lit": 2
+    }
+  }
+}
