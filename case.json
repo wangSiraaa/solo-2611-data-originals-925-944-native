@@ -1,0 +1,82 @@
+{
+  "family": {
+    "years": {
+      "甲": [
+        100,
+        104
+      ],
+      "乙": [
+        125,
+        129
+      ]
+    },
+    "links": [
+      {
+        "id": "K",
+        "parents": [
+          "甲"
+        ],
+        "child": "乙",
+        "age": [
+          25,
+          25
+        ]
+      }
+    ]
+  },
+  "book": {
+    "years": [
+      125,
+      140
+    ],
+    "leaves": [
+      {
+        "id": "F",
+        "mentions": [
+          {
+            "person": "甲",
+            "age": [
+              30,
+              30
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G",
+        "mentions": [
+          {
+            "person": "乙",
+            "age": [
+              5,
+              5
+            ]
+          }
+        ]
+      }
+    ],
+    "gaps": [
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "changes": [
+    {
+      "path": "family.years.甲",
+      "value": [
+        104
+      ]
+    },
+    {
+      "path": "book.gaps",
+      "value": [
+        [
+          4,
+          4
+        ]
+      ]
+    }
+  ]
+}
