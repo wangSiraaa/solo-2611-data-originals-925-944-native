@@ -1,0 +1,126 @@
+{
+  "base": {
+    "directory": {
+      "timeout": 3,
+      "numbers": {
+        "1": "A",
+        "2": "D",
+        "12": "B",
+        "378": "A"
+      }
+    },
+    "tape": {
+      "digits": [
+        [
+          0,
+          "1"
+        ],
+        [
+          2,
+          "2"
+        ]
+      ],
+      "end": 8
+    },
+    "shift": {
+      "staffed": [
+        "Q"
+      ],
+      "stops": [
+        "A",
+        "B",
+        "D",
+        "X",
+        "Q",
+        "U",
+        "V",
+        "Z"
+      ],
+      "lines": [
+        {
+          "id": "ax",
+          "from": "A",
+          "to": "X",
+          "cost": null
+        },
+        {
+          "id": "xa",
+          "from": "X",
+          "to": "A",
+          "cost": 3
+        },
+        {
+          "id": "xq",
+          "from": "X",
+          "to": "Q",
+          "cost": null
+        },
+        {
+          "id": "bq",
+          "from": "B",
+          "to": "Q",
+          "cost": null
+        },
+        {
+          "id": "qb",
+          "from": "Q",
+          "to": "B",
+          "cost": null
+        },
+        {
+          "id": "dq",
+          "from": "D",
+          "to": "Q",
+          "cost": null
+        },
+        {
+          "id": "uv",
+          "from": "U",
+          "to": "V",
+          "cost": null
+        },
+        {
+          "id": "vu",
+          "from": "V",
+          "to": "U",
+          "cost": null
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "name": "timeout-at-tie",
+      "replace": "tape.digits[1][0]",
+      "value": 3
+    },
+    {
+      "name": "unattended",
+      "replace": "shift.staffed",
+      "value": []
+    },
+    {
+      "name": "bad-short-prefix",
+      "replace": "tape.digits",
+      "value": [
+        [
+          0,
+          "3"
+        ],
+        [
+          1,
+          "1"
+        ],
+        [
+          2,
+          "2"
+        ]
+      ]
+    },
+    {
+      "name": "reachable-dead-end",
+      "replace": "directory.numbers.12",
+      "value": "Z"
+    }
+  ]
+}
