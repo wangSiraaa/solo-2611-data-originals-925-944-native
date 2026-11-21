@@ -1,0 +1,59 @@
+{
+  "change": {
+    "path": "book.gaps",
+    "value": [
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  "range": [
+    125,
+    140
+  ],
+  "leaf_ids": [
+    "F",
+    "G"
+  ],
+  "gaps": [
+    [
+      4,
+      4
+    ]
+  ],
+  "status": "book_impossible",
+  "diagnosis": [
+    "接缝 F -> G（要求年差 [4, 4]）：两叶各自有候选年 [130, 134] / [130, 134]，但没有任何年对满足该接缝"
+  ],
+  "marginals": {
+    "F": [
+      130,
+      134
+    ],
+    "G": [
+      130,
+      134
+    ]
+  },
+  "marginal_witness": {
+    "F": {
+      "130": null,
+      "134": null
+    },
+    "G": {
+      "130": null,
+      "134": null
+    }
+  },
+  "pairs": {
+    "0|1": {
+      "leaves": [
+        "F",
+        "G"
+      ],
+      "values": [],
+      "witness": {}
+    }
+  }
+}

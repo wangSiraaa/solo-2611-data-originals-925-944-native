@@ -1,0 +1,19 @@
+{
+  "change": {
+    "path": "family.years.甲",
+    "value": [
+      104
+    ]
+  },
+  "solutions": [
+    {
+      "birth": {
+        "甲": 104,
+        "乙": 129
+      },
+      "parents": {
+        "K": "甲"
+      }
+    }
+  ]
+}
