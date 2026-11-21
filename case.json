@@ -1,0 +1,134 @@
+{
+  "trees": {
+    "T": {
+      "root": null,
+      "g": "root",
+      "tip": "g"
+    },
+    "U": {
+      "root": null,
+      "tip": "root"
+    }
+  },
+  "tags": [
+    {
+      "id": "t0",
+      "tree": "T",
+      "branch": "root",
+      "day": 1,
+      "variety": "Gold"
+    },
+    {
+      "id": "g2",
+      "tree": "T",
+      "branch": "g",
+      "day": 2,
+      "variety": "Blue"
+    },
+    {
+      "id": "u0",
+      "tree": "U",
+      "branch": "root",
+      "day": 1,
+      "variety": "Blue"
+    }
+  ],
+  "flowering": [
+    {
+      "tree": "T",
+      "leaf": "tip",
+      "days": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "tree": "U",
+      "leaf": "tip",
+      "days": [
+        [
+          1,
+          3
+        ]
+      ]
+    }
+  ],
+  "vouchers": [
+    {
+      "id": "v1",
+      "tree": "T",
+      "leaf": "tip",
+      "day": 1
+    },
+    {
+      "id": "v2",
+      "tree": "T",
+      "leaf": "tip",
+      "day": 2
+    },
+    {
+      "id": "v3",
+      "tree": "U",
+      "leaf": "tip",
+      "day": 2
+    }
+  ],
+  "pages": [
+    {
+      "order": 1,
+      "name": "霞",
+      "originals": [
+        "v1",
+        "v3"
+      ]
+    },
+    {
+      "order": 2,
+      "name": "青",
+      "originals": [
+        "v2",
+        "v3"
+      ]
+    },
+    {
+      "order": 3,
+      "name": "霞",
+      "originals": [
+        "v3"
+      ]
+    },
+    {
+      "order": 4,
+      "name": "澄",
+      "originals": [
+        "v3"
+      ]
+    },
+    {
+      "order": 5,
+      "name": "棠",
+      "originals": [
+        "v1"
+      ]
+    }
+  ],
+  "desk": {
+    "through": 5,
+    "selected": {
+      "1": "v1"
+    }
+  },
+  "upstream": {
+    "replace_tag_day": {
+      "id": "g2",
+      "day": 3
+    }
+  },
+  "downstream": {
+    "replace_selected": {
+      "1": "v3"
+    }
+  }
+}
