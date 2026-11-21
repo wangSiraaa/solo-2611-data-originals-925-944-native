@@ -1,0 +1,88 @@
+{
+  "network": {
+    "stations": [
+      "A",
+      "B",
+      "W",
+      "E"
+    ],
+    "modes": [
+      "u",
+      "v"
+    ],
+    "edges": [
+      {
+        "id": "aw",
+        "from": "A",
+        "to": "W",
+        "delay": {
+          "u": 2,
+          "v": 4
+        }
+      },
+      {
+        "id": "ae",
+        "from": "A",
+        "to": "E",
+        "delay": {
+          "u": 2,
+          "v": 4
+        }
+      },
+      {
+        "id": "bw",
+        "from": "B",
+        "to": "W",
+        "delay": {
+          "u": 2,
+          "v": 4
+        }
+      },
+      {
+        "id": "be",
+        "from": "B",
+        "to": "E",
+        "delay": {
+          "u": 4,
+          "v": 2
+        }
+      }
+    ]
+  },
+  "plan": {
+    "worlds": {
+      "A": [
+        "u",
+        "v"
+      ],
+      "B": [
+        "u",
+        "v"
+      ]
+    },
+    "slots": [
+      {
+        "station": "W",
+        "time": 2
+      },
+      {
+        "station": "E",
+        "time": 2
+      }
+    ],
+    "bottle_limit": 2
+  },
+  "changes": [
+    {
+      "edge_delay": {
+        "edge": "be",
+        "mode": "v",
+        "value": 4
+      }
+    },
+    {
+      "path": "plan.bottle_limit",
+      "value": 1
+    }
+  ]
+}
