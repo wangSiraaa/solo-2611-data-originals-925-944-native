@@ -1,0 +1,39 @@
+{
+  "plate": {
+    "tracks": {
+      "T": "10101"
+    },
+    "patches": [],
+    "heads": [
+      {
+        "track": "T",
+        "tooth": "C",
+        "offset": 0
+      }
+    ]
+  },
+  "bench": {
+    "cooldown": {
+      "C": 3
+    },
+    "fast": 1,
+    "slow": 2,
+    "max_changes": 1
+  },
+  "changes": [
+    {
+      "path": "plate.patches",
+      "value": [
+        {
+          "track": "T",
+          "start": 1,
+          "bits": "1"
+        }
+      ]
+    },
+    {
+      "path": "bench.max_changes",
+      "value": 2
+    }
+  ]
+}
