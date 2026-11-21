@@ -1,0 +1,127 @@
+{
+  "pin": [
+    2,
+    0,
+    2
+  ],
+  "panels": {
+    "H": {
+      "plane": "z=0",
+      "rect": [
+        [
+          -2,
+          2
+        ],
+        [
+          -1,
+          1
+        ]
+      ]
+    },
+    "V": {
+      "plane": "x=0",
+      "rect": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  "observations": [
+    {
+      "day": 1,
+      "hour": "morning",
+      "direction": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "day": 1,
+      "hour": "noon",
+      "direction": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "day": 2,
+      "hour": "morning",
+      "direction": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "day": 2,
+      "hour": "noon",
+      "direction": [
+        2,
+        0,
+        1
+      ]
+    }
+  ],
+  "shades": [],
+  "dies": [
+    {
+      "id": "H1",
+      "panel": "H",
+      "center": [
+        1,
+        0
+      ],
+      "half_width": 0,
+      "cost": 1
+    },
+    {
+      "id": "H2",
+      "panel": "H",
+      "center": [
+        -2,
+        0
+      ],
+      "half_width": 0,
+      "cost": 4
+    },
+    {
+      "id": "V1",
+      "panel": "V",
+      "center": [
+        0,
+        1
+      ],
+      "half_width": 0,
+      "cost": 1
+    }
+  ],
+  "capacity": {
+    "H": 2,
+    "V": 1
+  },
+  "upstream": {
+    "replace_direction": {
+      "day": 2,
+      "hour": "noon",
+      "direction": [
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  "downstream": {
+    "capacity": {
+      "H": 2,
+      "V": 0
+    }
+  }
+}
