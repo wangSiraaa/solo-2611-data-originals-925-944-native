@@ -1,0 +1,150 @@
+{
+  "size": 5,
+  "root": {
+    "id": "root",
+    "to_move": "black",
+    "black": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "white": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ]
+  },
+  "nodes": [
+    {
+      "id": "cap",
+      "parent": "root",
+      "move": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "corner",
+      "parent": "root",
+      "move": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "recap",
+      "parent": "cap",
+      "move": [
+        2,
+        2
+      ]
+    }
+  ],
+  "terminals": [
+    "cap",
+    "corner"
+  ],
+  "photos": [
+    {
+      "ply": 1,
+      "reads": [
+        {
+          "point": [
+            2,
+            2
+          ],
+          "value": "empty"
+        }
+      ]
+    }
+  ],
+  "upstream": {
+    "remove_root_black": [
+      1,
+      2
+    ]
+  },
+  "downstream": {
+    "photos": []
+  },
+  "rejoin": {
+    "size": 5,
+    "root": {
+      "id": "root",
+      "black": [],
+      "white": [],
+      "to_move": "black"
+    },
+    "nodes": [
+      {
+        "id": "ab1",
+        "parent": "root",
+        "move": [
+          1,
+          1
+        ]
+      },
+      {
+        "id": "ab2",
+        "parent": "ab1",
+        "move": "pass"
+      },
+      {
+        "id": "ab3",
+        "parent": "ab2",
+        "move": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "ba1",
+        "parent": "root",
+        "move": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "ba2",
+        "parent": "ba1",
+        "move": "pass"
+      },
+      {
+        "id": "ba3",
+        "parent": "ba2",
+        "move": [
+          1,
+          1
+        ]
+      }
+    ],
+    "terminals": [
+      "ab3",
+      "ba3"
+    ],
+    "photos": []
+  }
+}
