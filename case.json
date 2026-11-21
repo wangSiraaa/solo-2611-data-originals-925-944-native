@@ -1,0 +1,117 @@
+{
+  "segments": {
+    "M": [
+      {
+        "ref": "r1",
+        "public": "R"
+      },
+      {
+        "pad": 3
+      }
+    ],
+    "N": [
+      {
+        "mark": "near"
+      },
+      {
+        "pad": 4
+      }
+    ],
+    "F": [
+      {
+        "mark": "far"
+      },
+      {
+        "pad": 1
+      }
+    ]
+  },
+  "exports": [
+    {
+      "segment": "N",
+      "name": "R",
+      "mark": "near",
+      "strength": "weak",
+      "enabled": true
+    },
+    {
+      "segment": "F",
+      "name": "R",
+      "mark": "far",
+      "strength": "strong",
+      "enabled": false
+    }
+  ],
+  "priority": [
+    "M",
+    "N",
+    "F"
+  ],
+  "print_shop": {
+    "order": [
+      "M",
+      "N",
+      "F"
+    ],
+    "alignment": {
+      "M": 1,
+      "N": 1,
+      "F": 1
+    },
+    "short_range": [
+      -3,
+      3
+    ]
+  },
+  "upstream": {
+    "enable": {
+      "segment": "F",
+      "name": "R"
+    }
+  },
+  "downstream": {
+    "short_range": [
+      -3,
+      2
+    ]
+  },
+  "coupled": {
+    "segments": {
+      "P": [
+        {
+          "mark": "start"
+        },
+        {
+          "ref": "a",
+          "local": "end"
+        },
+        {
+          "pad": 1
+        },
+        {
+          "ref": "b",
+          "local": "start"
+        },
+        {
+          "mark": "end"
+        }
+      ]
+    },
+    "exports": [],
+    "priority": [
+      "P"
+    ],
+    "print_shop": {
+      "order": [
+        "P"
+      ],
+      "alignment": {
+        "P": 1
+      },
+      "short_range": [
+        -3,
+        3
+      ]
+    }
+  }
+}
