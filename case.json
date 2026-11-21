@@ -1,0 +1,93 @@
+{
+  "source": {
+    "n": 2,
+    "events": [
+      [
+        1,
+        0,
+        "L",
+        5
+      ]
+    ],
+    "as_of": 1
+  },
+  "consumer": {
+    "costs": [
+      4,
+      1,
+      1,
+      1
+    ],
+    "locked": [],
+    "targets": [
+      10,
+      5
+    ]
+  },
+  "changes": [
+    {
+      "source": {
+        "events": [
+          [
+            1,
+            0,
+            "U",
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "consumer": {
+        "costs": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "consumer": {
+        "locked": [
+          [
+            0,
+            "U"
+          ],
+          [
+            0,
+            "L"
+          ],
+          [
+            1,
+            "U"
+          ],
+          [
+            1,
+            "L"
+          ]
+        ]
+      }
+    }
+  ],
+  "next_stop": {
+    "source": {
+      "n": 2,
+      "events": [],
+      "as_of": 0
+    },
+    "consumer": {
+      "costs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "locked": [],
+      "targets": [
+        5,
+        1
+      ]
+    }
+  }
+}
