@@ -1,0 +1,68 @@
+{
+  "book": {
+    "bells": "ABCD",
+    "signs": {
+      "H": [],
+      "M": [
+        1,
+        4
+      ],
+      "X": []
+    }
+  },
+  "rehearsal": {
+    "start": "ABCD",
+    "steps": [
+      {
+        "normal": "H",
+        "alternatives": []
+      },
+      {
+        "normal": "M",
+        "alternatives": [
+          "X"
+        ]
+      }
+    ],
+    "substitutes": [
+      {
+        "step": 2,
+        "bell": "B",
+        "moves": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      }
+    ]
+  },
+  "changes": [
+    {
+      "path": "book.signs.H",
+      "value": [
+        1,
+        4
+      ]
+    },
+    {
+      "path": "rehearsal.substitutes",
+      "value": [
+        {
+          "step": 2,
+          "bell": "B",
+          "moves": [
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
