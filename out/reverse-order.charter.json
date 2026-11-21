@@ -1,0 +1,252 @@
+{
+  "kind": "charter_adjudication",
+  "quorum": 3,
+  "before": [
+    [
+      "M2",
+      "M1"
+    ]
+  ],
+  "motion_order_space": {
+    "legal_total_orders": 1,
+    "orders": [
+      [
+        "M2",
+        "M1"
+      ]
+    ],
+    "orders_digest": "b9d59061f47c537cd87e8f56014a293742b6778f2102d39f67f58483199c1c4e"
+  },
+  "initial_articles": {
+    "use": "自习"
+  },
+  "motions": [
+    {
+      "id": "M1",
+      "article": "use",
+      "old": "自习",
+      "next": "报刊"
+    },
+    {
+      "id": "M2",
+      "article": "use",
+      "old": "报刊",
+      "next": "合读"
+    }
+  ],
+  "outcomes": [
+    {
+      "final_articles": {
+        "use": "报刊"
+      },
+      "final_digest": "b4eab8795f7e6f9fe95db1b46cc5b1f33eefdecce9f8eeb3e9be89a5717c2819",
+      "order_count": 1,
+      "distinct_processes": 1,
+      "agenda": [
+        "M2",
+        "M1"
+      ],
+      "steps": [
+        {
+          "position": 1,
+          "motion": "M2",
+          "article": "use",
+          "current_text": "自习",
+          "proposed_old": "报刊",
+          "proposed_next": "合读",
+          "admitted": false,
+          "reason": "text_mismatch",
+          "quorum_required": 3,
+          "eligible_count": 3,
+          "quorum_met": true,
+          "vote_met": true,
+          "passed": false,
+          "ballot": {
+            "motion": "M2",
+            "ballot_recorded": true,
+            "eligible": [
+              "A",
+              "B",
+              "C"
+            ],
+            "eligible_count": 3,
+            "yes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "no": [],
+            "abstain": [],
+            "yes_count": 3,
+            "no_count": 0,
+            "abstain_count": 0,
+            "ineligible_ballots": []
+          },
+          "text_changed_by": null,
+          "current_after": "自习"
+        },
+        {
+          "position": 2,
+          "motion": "M1",
+          "article": "use",
+          "current_text": "自习",
+          "proposed_old": "自习",
+          "proposed_next": "报刊",
+          "admitted": true,
+          "reason": "passed",
+          "quorum_required": 3,
+          "eligible_count": 3,
+          "quorum_met": true,
+          "vote_met": true,
+          "passed": true,
+          "ballot": {
+            "motion": "M1",
+            "ballot_recorded": true,
+            "eligible": [
+              "A",
+              "B",
+              "C"
+            ],
+            "eligible_count": 3,
+            "yes": [
+              "A",
+              "B"
+            ],
+            "no": [
+              "C"
+            ],
+            "abstain": [],
+            "yes_count": 2,
+            "no_count": 1,
+            "abstain_count": 0,
+            "ineligible_ballots": []
+          },
+          "current_after": "报刊"
+        }
+      ],
+      "ballots": [
+        {
+          "position": 1,
+          "motion": "M2",
+          "article": "use",
+          "current_text": "自习",
+          "proposed_old": "报刊",
+          "proposed_next": "合读",
+          "admitted": false,
+          "reason": "text_mismatch",
+          "quorum_required": 3,
+          "eligible_count": 3,
+          "quorum_met": true,
+          "vote_met": true,
+          "passed": false,
+          "ballot": {
+            "motion": "M2",
+            "ballot_recorded": true,
+            "eligible": [
+              "A",
+              "B",
+              "C"
+            ],
+            "eligible_count": 3,
+            "yes": [
+              "A",
+              "B",
+              "C"
+            ],
+            "no": [],
+            "abstain": [],
+            "yes_count": 3,
+            "no_count": 0,
+            "abstain_count": 0,
+            "ineligible_ballots": []
+          },
+          "text_changed_by": null,
+          "current_after": "自习"
+        },
+        {
+          "position": 2,
+          "motion": "M1",
+          "article": "use",
+          "current_text": "自习",
+          "proposed_old": "自习",
+          "proposed_next": "报刊",
+          "admitted": true,
+          "reason": "passed",
+          "quorum_required": 3,
+          "eligible_count": 3,
+          "quorum_met": true,
+          "vote_met": true,
+          "passed": true,
+          "ballot": {
+            "motion": "M1",
+            "ballot_recorded": true,
+            "eligible": [
+              "A",
+              "B",
+              "C"
+            ],
+            "eligible_count": 3,
+            "yes": [
+              "A",
+              "B"
+            ],
+            "no": [
+              "C"
+            ],
+            "abstain": [],
+            "yes_count": 2,
+            "no_count": 1,
+            "abstain_count": 0,
+            "ineligible_ballots": []
+          },
+          "current_after": "报刊"
+        }
+      ],
+      "witnesses": [
+        {
+          "agenda": [
+            "M2",
+            "M1"
+          ],
+          "process": {
+            "admitted": [
+              "M1"
+            ],
+            "passed": [
+              "M1"
+            ],
+            "final_snapshot": {
+              "use": "报刊"
+            }
+          },
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "unique": true,
+  "signable": true,
+  "final_articles": {
+    "use": "报刊"
+  },
+  "final_digest": "b4eab8795f7e6f9fe95db1b46cc5b1f33eefdecce9f8eeb3e9be89a5717c2819",
+  "differing_finals": [],
+  "roster_seal": "e393a20839debb7a842ad7c53a0400f5ee62579a86fa308c96b17e5a550e1418",
+  "signing_record": {
+    "kind": "charter_signing_record",
+    "final_articles": {
+      "use": "报刊"
+    },
+    "final_digest": "b4eab8795f7e6f9fe95db1b46cc5b1f33eefdecce9f8eeb3e9be89a5717c2819",
+    "motion_order_space_digest": "b9d59061f47c537cd87e8f56014a293742b6778f2102d39f67f58483199c1c4e",
+    "legal_total_orders": 1,
+    "roster_seal": "e393a20839debb7a842ad7c53a0400f5ee62579a86fa308c96b17e5a550e1418",
+    "agenda": [
+      "M2",
+      "M1"
+    ],
+    "witness_processes": 1,
+    "sealed": "e53f10535858c55b06b3441ef1d42aa3c2d7aedda08978fd67006ce1d4b32cb7"
+  },
+  "sealed": "6d6f7b744246aab4a11dad324079d089d2990348b501df7010f0a178ea3d1ca0"
+}

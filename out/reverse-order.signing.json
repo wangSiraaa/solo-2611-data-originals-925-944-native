@@ -1,0 +1,16 @@
+{
+  "kind": "charter_signing_record",
+  "final_articles": {
+    "use": "报刊"
+  },
+  "final_digest": "b4eab8795f7e6f9fe95db1b46cc5b1f33eefdecce9f8eeb3e9be89a5717c2819",
+  "motion_order_space_digest": "b9d59061f47c537cd87e8f56014a293742b6778f2102d39f67f58483199c1c4e",
+  "legal_total_orders": 1,
+  "roster_seal": "e393a20839debb7a842ad7c53a0400f5ee62579a86fa308c96b17e5a550e1418",
+  "agenda": [
+    "M2",
+    "M1"
+  ],
+  "witness_processes": 1,
+  "sealed": "e53f10535858c55b06b3441ef1d42aa3c2d7aedda08978fd67006ce1d4b32cb7"
+}

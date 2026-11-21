@@ -1,0 +1,16 @@
+{
+  "kind": "charter_signing_record",
+  "final_articles": {
+    "use": "自习"
+  },
+  "final_digest": "f02f8decb26646ec97d89534391ba10a403037aa654856f783fe6f4f9fadea28",
+  "motion_order_space_digest": "3e0e6613cfdc8ff6b16eff00d1ef55166994e172b942791b0c7c704858c78705",
+  "legal_total_orders": 1,
+  "roster_seal": "4fbf9f4e0e72cdc46e55b6a77f168f4a838c0da16df3a45cc225f2a6bfecbd88",
+  "agenda": [
+    "M1",
+    "M2"
+  ],
+  "witness_processes": 1,
+  "sealed": "18dda0d62d79c3e382f1ce078c917c16b82255521aae9c90202b41f10a14b256"
+}

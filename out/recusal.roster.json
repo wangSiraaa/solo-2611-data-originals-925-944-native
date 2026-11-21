@@ -1,0 +1,410 @@
+{
+  "kind": "attested_roster",
+  "members": [
+    "A",
+    "B",
+    "C"
+  ],
+  "cutoffs": {
+    "M1": {
+      "cutoff": {
+        "t": 3,
+        "seq": 0
+      },
+      "eligible": [
+        "B",
+        "C"
+      ],
+      "eligible_count": 2,
+      "excluded": [
+        {
+          "member": "A",
+          "reason": "recused",
+          "present": true,
+          "recused": true,
+          "basis": {
+            "id": "eA",
+            "rev": 1,
+            "t": 1,
+            "seq": 0,
+            "kind": "in",
+            "member": "A"
+          },
+          "recusal": {
+            "active": true,
+            "record": {
+              "id": "rA",
+              "rev": 1,
+              "t": 2,
+              "seq": 0,
+              "kind": "recuse",
+              "member": "A",
+              "motion": "M1"
+            }
+          }
+        }
+      ],
+      "voters": [
+        {
+          "member": "A",
+          "eligible": false,
+          "present": true,
+          "recused": true,
+          "present_basis": {
+            "id": "eA",
+            "rev": 1,
+            "t": 1,
+            "seq": 0,
+            "kind": "in",
+            "member": "A"
+          },
+          "recusal_basis": {
+            "active": true,
+            "record": {
+              "id": "rA",
+              "rev": 1,
+              "t": 2,
+              "seq": 0,
+              "kind": "recuse",
+              "member": "A",
+              "motion": "M1"
+            }
+          },
+          "trace": [
+            {
+              "record": {
+                "id": "eA",
+                "rev": 1,
+                "t": 1,
+                "seq": 0,
+                "kind": "in",
+                "member": "A"
+              },
+              "present": true,
+              "recused": []
+            },
+            {
+              "record": {
+                "id": "rA",
+                "rev": 1,
+                "t": 2,
+                "seq": 0,
+                "kind": "recuse",
+                "member": "A",
+                "motion": "M1"
+              },
+              "present": true,
+              "recused": [
+                "M1"
+              ]
+            }
+          ]
+        },
+        {
+          "member": "B",
+          "eligible": true,
+          "present": true,
+          "recused": false,
+          "present_basis": {
+            "id": "eB",
+            "rev": 1,
+            "t": 1,
+            "seq": 1,
+            "kind": "in",
+            "member": "B"
+          },
+          "recusal_basis": null,
+          "trace": [
+            {
+              "record": {
+                "id": "eB",
+                "rev": 1,
+                "t": 1,
+                "seq": 1,
+                "kind": "in",
+                "member": "B"
+              },
+              "present": true,
+              "recused": []
+            }
+          ]
+        },
+        {
+          "member": "C",
+          "eligible": true,
+          "present": true,
+          "recused": false,
+          "present_basis": {
+            "id": "eC",
+            "rev": 1,
+            "t": 1,
+            "seq": 2,
+            "kind": "in",
+            "member": "C"
+          },
+          "recusal_basis": null,
+          "trace": [
+            {
+              "record": {
+                "id": "eC",
+                "rev": 1,
+                "t": 1,
+                "seq": 2,
+                "kind": "in",
+                "member": "C"
+              },
+              "present": true,
+              "recused": []
+            }
+          ]
+        }
+      ],
+      "effective_records": [
+        {
+          "id": "eA",
+          "rev": 1,
+          "t": 1,
+          "seq": 0,
+          "member": "A",
+          "kind": "in"
+        },
+        {
+          "id": "eB",
+          "rev": 1,
+          "t": 1,
+          "seq": 1,
+          "member": "B",
+          "kind": "in"
+        },
+        {
+          "id": "eC",
+          "rev": 1,
+          "t": 1,
+          "seq": 2,
+          "member": "C",
+          "kind": "in"
+        },
+        {
+          "id": "rA",
+          "rev": 1,
+          "t": 2,
+          "seq": 0,
+          "member": "A",
+          "kind": "recuse",
+          "motion": "M1"
+        }
+      ],
+      "motion": "M1",
+      "ballot": {
+        "recorded": true,
+        "choices": {
+          "A": "yes",
+          "B": "yes",
+          "C": "no"
+        },
+        "motion": "M1"
+      },
+      "sealed": "697f71d1724477263f82b7c440dec723369a8bb20c968269b0f18b7f83fda19f"
+    },
+    "M2": {
+      "cutoff": {
+        "t": 3,
+        "seq": 0
+      },
+      "eligible": [
+        "A",
+        "B",
+        "C"
+      ],
+      "eligible_count": 3,
+      "excluded": [],
+      "voters": [
+        {
+          "member": "A",
+          "eligible": true,
+          "present": true,
+          "recused": false,
+          "present_basis": {
+            "id": "eA",
+            "rev": 1,
+            "t": 1,
+            "seq": 0,
+            "kind": "in",
+            "member": "A"
+          },
+          "recusal_basis": null,
+          "trace": [
+            {
+              "record": {
+                "id": "eA",
+                "rev": 1,
+                "t": 1,
+                "seq": 0,
+                "kind": "in",
+                "member": "A"
+              },
+              "present": true,
+              "recused": []
+            },
+            {
+              "record": {
+                "id": "rA",
+                "rev": 1,
+                "t": 2,
+                "seq": 0,
+                "kind": "recuse",
+                "member": "A",
+                "motion": "M1"
+              },
+              "present": true,
+              "recused": [
+                "M1"
+              ]
+            }
+          ]
+        },
+        {
+          "member": "B",
+          "eligible": true,
+          "present": true,
+          "recused": false,
+          "present_basis": {
+            "id": "eB",
+            "rev": 1,
+            "t": 1,
+            "seq": 1,
+            "kind": "in",
+            "member": "B"
+          },
+          "recusal_basis": null,
+          "trace": [
+            {
+              "record": {
+                "id": "eB",
+                "rev": 1,
+                "t": 1,
+                "seq": 1,
+                "kind": "in",
+                "member": "B"
+              },
+              "present": true,
+              "recused": []
+            }
+          ]
+        },
+        {
+          "member": "C",
+          "eligible": true,
+          "present": true,
+          "recused": false,
+          "present_basis": {
+            "id": "eC",
+            "rev": 1,
+            "t": 1,
+            "seq": 2,
+            "kind": "in",
+            "member": "C"
+          },
+          "recusal_basis": null,
+          "trace": [
+            {
+              "record": {
+                "id": "eC",
+                "rev": 1,
+                "t": 1,
+                "seq": 2,
+                "kind": "in",
+                "member": "C"
+              },
+              "present": true,
+              "recused": []
+            }
+          ]
+        }
+      ],
+      "effective_records": [
+        {
+          "id": "eA",
+          "rev": 1,
+          "t": 1,
+          "seq": 0,
+          "member": "A",
+          "kind": "in"
+        },
+        {
+          "id": "eB",
+          "rev": 1,
+          "t": 1,
+          "seq": 1,
+          "member": "B",
+          "kind": "in"
+        },
+        {
+          "id": "eC",
+          "rev": 1,
+          "t": 1,
+          "seq": 2,
+          "member": "C",
+          "kind": "in"
+        },
+        {
+          "id": "rA",
+          "rev": 1,
+          "t": 2,
+          "seq": 0,
+          "member": "A",
+          "kind": "recuse",
+          "motion": "M1"
+        }
+      ],
+      "motion": "M2",
+      "ballot": {
+        "recorded": true,
+        "choices": {
+          "A": "yes",
+          "B": "yes",
+          "C": "yes"
+        },
+        "motion": "M2"
+      },
+      "sealed": "509b35f1e119d68460ff4da2647ff6fe3eac6998243cc587d6ecb3edd1e90eaa"
+    }
+  },
+  "roll_events": [
+    {
+      "id": "eA",
+      "rev": 1,
+      "t": 1,
+      "seq": 0,
+      "member": "A",
+      "kind": "in"
+    },
+    {
+      "id": "eB",
+      "rev": 1,
+      "t": 1,
+      "seq": 1,
+      "member": "B",
+      "kind": "in"
+    },
+    {
+      "id": "eC",
+      "rev": 1,
+      "t": 1,
+      "seq": 2,
+      "member": "C",
+      "kind": "in"
+    },
+    {
+      "id": "rA",
+      "rev": 1,
+      "t": 2,
+      "seq": 0,
+      "member": "A",
+      "kind": "recuse",
+      "motion": "M1"
+    }
+  ],
+  "cancelled": [],
+  "sealed": "4fbf9f4e0e72cdc46e55b6a77f168f4a838c0da16df3a45cc225f2a6bfecbd88"
+}
