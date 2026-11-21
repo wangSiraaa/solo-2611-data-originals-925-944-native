@@ -1,0 +1,154 @@
+{
+  "base": {
+    "font": [
+      {
+        "chars": "f",
+        "width": 5,
+        "stops": [
+          0,
+          5
+        ]
+      },
+      {
+        "chars": "i",
+        "width": 3,
+        "stops": [
+          0,
+          3
+        ]
+      },
+      {
+        "chars": "x",
+        "width": 4,
+        "stops": [
+          0,
+          4
+        ]
+      },
+      {
+        "chars": "fi",
+        "width": 9,
+        "stops": [
+          0,
+          4,
+          9
+        ]
+      }
+    ],
+    "line": [
+      {
+        "dir": "L",
+        "letters": [
+          [
+            "F",
+            "f"
+          ],
+          [
+            "I",
+            "i"
+          ],
+          [
+            "X",
+            "x"
+          ]
+        ]
+      }
+    ],
+    "gesture": {
+      "locks": [],
+      "carets": [
+        {
+          "x": 3,
+          "delete": "forward"
+        }
+      ]
+    }
+  },
+  "variants": [
+    {
+      "name": "correct-fi",
+      "path": "font[3].stops",
+      "value": [
+        0,
+        7,
+        9
+      ]
+    },
+    {
+      "name": "lock-i",
+      "path": "gesture.locks",
+      "value": [
+        "I"
+      ]
+    },
+    {
+      "name": "two-swap",
+      "path": "gesture.carets",
+      "value": [
+        {
+          "x": 2,
+          "delete": "forward"
+        },
+        {
+          "x": 2,
+          "delete": "forward"
+        }
+      ]
+    },
+    {
+      "name": "two-possible",
+      "path": "gesture.carets",
+      "value": [
+        {
+          "x": 2,
+          "delete": "forward"
+        }
+      ]
+    }
+  ],
+  "mixed": {
+    "line": [
+      {
+        "dir": "L",
+        "letters": [
+          [
+            "F",
+            "f"
+          ]
+        ]
+      },
+      {
+        "dir": "R",
+        "letters": [
+          [
+            "I",
+            "i"
+          ],
+          [
+            "X",
+            "x"
+          ]
+        ]
+      },
+      {
+        "dir": "L",
+        "letters": [
+          [
+            "Y",
+            "x"
+          ]
+        ]
+      }
+    ],
+    "gesture": {
+      "locks": [],
+      "carets": [
+        {
+          "x": 5,
+          "delete": "forward"
+        }
+      ]
+    },
+    "use_font": "base.font"
+  }
+}
