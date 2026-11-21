@@ -1,0 +1,20 @@
+{
+  "description": "Two heads reading the same tape, driving the same tooth C. Their simultaneous strikes at ticks 0/2/4 must collapse to one sound each; the baseline fastest feed stays 7.",
+  "plate": {
+    "tracks": {
+      "A": "10101",
+      "B": "10101"
+    },
+    "patches": [],
+    "heads": [
+      { "track": "A", "tooth": "C", "offset": 0 },
+      { "track": "B", "tooth": "C", "offset": 0 }
+    ]
+  },
+  "bench": {
+    "cooldown": { "C": 3 },
+    "fast": 1,
+    "slow": 2,
+    "max_changes": 1
+  }
+}

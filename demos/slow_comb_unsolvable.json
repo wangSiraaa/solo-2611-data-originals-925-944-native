@@ -1,0 +1,18 @@
+{
+  "description": "A single tooth with cooldown 9 on a 3-column tape that must strike at ticks 0 and 2. The largest possible gap is K*slow = 2*2 = 4 < 9, so no feed can re-sound it: the bench must report no solution.",
+  "plate": {
+    "tracks": {
+      "T": "101"
+    },
+    "patches": [],
+    "heads": [
+      { "track": "T", "tooth": "C", "offset": 0 }
+    ]
+  },
+  "bench": {
+    "cooldown": { "C": 9 },
+    "fast": 1,
+    "slow": 2,
+    "max_changes": 5
+  }
+}
